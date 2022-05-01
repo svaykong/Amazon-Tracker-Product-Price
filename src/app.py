@@ -59,7 +59,6 @@ if __name__ == '__main__':
         RECEIVE_EMAIL = os.environ.get('RECEIVE_EMAIL')
         PASSWORD = os.environ.get('PASSWORD')
 
-        pass
         # go to amazon offical website and check the above product:
         response = requests.get(url, headers=header)
         if check_response_status_code(response.status_code):
